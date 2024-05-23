@@ -10,7 +10,7 @@ const configuration = new Configuration({
 const token = process.env.TELEGRAM_BOT_TOKEN
 const openai = new OpenAIApi(configuration)
 
-invariant(token, "Не удалось прочитать токен")
+invariant(token, "")
 
 const bot = new TelegramBot(token, {polling: true});
 
